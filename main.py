@@ -1,12 +1,7 @@
-print("Testanto tudo")
+from src.extract import buscar_todos_dados_commodities
+from src.load import salvar_no_postgres
 
-#variables
-age = 27
-name = "Nicolas Luca Rangel"
-
-#print
-print(age)
-
-#sum
-nova_idade = age + 1
-print(nova_idade)
+commodities = ['CL=F','GC=F','SI=F']
+if __name__ == "__main__":
+    dados_concatenados = buscar_todos_dados_commodities(commodities)
+    salvar_no_postgres(dados_concatenados,schema='public')

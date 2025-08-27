@@ -4,11 +4,11 @@
 
 *Nice time to have*
 
-**test everything**
-- 1
-- 2
-- 3
-- 4
+**Folders in this project:**
+- **app.** -  Created to store our dashboar application
+- **src.** - Used for extractior codes
+- **configs.** - 
+- **app.** 
 
 1) 
 2)
